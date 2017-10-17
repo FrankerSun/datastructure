@@ -11,6 +11,9 @@ import org.junit.Test;
  */
 public class CompressStr {
     public static String compress(String s){
+        if (s == null){
+            return "";
+        }
         StringBuffer sb = new StringBuffer();
         
         int i,j;
